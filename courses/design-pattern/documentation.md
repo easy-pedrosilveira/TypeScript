@@ -10,7 +10,7 @@
 
 ## Sessão 2: Entendendo o Príncipio SOLID
 
-## Sessão 3: 
+## Sessão 3: A Origem Design Patterns
 
 ## Recursos Adicionais
 
