@@ -4,7 +4,7 @@
 
 `Entendendo Padrões de Projetos`
 
----
+------------------------------------------------------------------------------------------------
 
 ## Sessão 1: Introdução
 
@@ -12,6 +12,8 @@
 
 ## Sessão 3: A Origem Design Patterns
 
-## Recursos Adicionais
+------------------------------------------------------------------------------------------------
+
+### Recursos Adicionais
 
 https://www.udemy.com/course/curso-design-patterns-typescript/?couponCode=KEEPLEARNING
