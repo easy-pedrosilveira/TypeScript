@@ -6,6 +6,7 @@
 `Estrutural - Definem como trabalhar com objetos e classes em estruturas maiores e complexas, e ainda assim flexíveis e eficientes.` exp MVC
 Models - Controllers e Views
 `Comportamental - Trabalham com a comunicação eficiente e designam as responsabilidaes comuns a objetos.` exp utilizando o Padrão GoF
-Nome do Padrão
-Problema que Soluciona
+
+Problema
 Solução
+Como Implementar
