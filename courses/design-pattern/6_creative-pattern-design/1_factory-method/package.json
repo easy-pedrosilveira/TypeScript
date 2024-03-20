@@ -1,0 +1,15 @@
+{
+  "name": "modelo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts"  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^5.4.2"
+  }
+}
