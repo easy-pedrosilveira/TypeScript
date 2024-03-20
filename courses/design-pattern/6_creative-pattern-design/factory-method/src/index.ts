@@ -5,6 +5,7 @@ import Transport from "./transport/Transport";
 declare var process;
 
 let transport: Transport;
+//implemente com bicicletas (--eats)
 
 if (process.argv.includes("--uber")) {
   
