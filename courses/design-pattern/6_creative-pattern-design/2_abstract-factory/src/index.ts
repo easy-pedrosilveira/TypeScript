@@ -1,28 +1,25 @@
-import { BikeTransport } from "./transport/BikeTransport";
-import { CarTransport } from "./transport/CarTransport";
-import { MotorCycleTransport } from "./transport/MotorCycleTransport";
-import Transport from "./transport/Transport";
+import Client from "./vehicles/client/Client";
+import Company from "./vehicles/const/Company";
+import NineNineTransport from "./vehicles/factories/NineNineTrasnport";
+import UberTransport from "./vehicles/factories/UberTransport";
+import ITransportFactory from "./vehicles/factories/interfaces/ITransportFactory";
 
-declare var process;
+const currentCompany = Company.NINENINE;
+let factory: ITransportFactory;
 
-let transport: Transport;
-//implemente com bicicletas (--eats)
+switch (currentCompany) {
+  
+  case Company.UBER:
+    factory = new UberTransport();
+    break;
 
-if (process.argv.includes("--uber")) {
-
-  transport = new CarTransport();
-  transport.startTransport();
-
-} else if (process.argv.includes("--log")) {
-
-  transport = new MotorCycleTransport();
-  transport.startTransport();
-
-} else if (process.argv.includes("--eats")) {
-
-  transport = new BikeTransport();
-  transport.startTransport();
-
-} else {
-  console.error("Selecione o tipo de entrega.");
+  case Company.NINENINE:
+    factory = new NineNineTransport();
+    break;
+  default:
+    console.error("CIA Desconhecida!");
 }
+
+const client = new Client(factory);
+
+client.startRoute();
